@@ -1,10 +1,10 @@
-import { SideBar } from './components/SideBar'
+import { Layout } from './components/Layout'
 import './styles/global.scss'
 
 function App() {
   return (
     <>
-      <SideBar />
+      <Layout />
     </>
   )
 }
