@@ -1,18 +1,24 @@
 import '../styles/sidebar.scss'
 
 export function SideBar() {
+  function handleImage(event: any) {
+    const buttonChecked = event.target
+
+    buttonChecked.classList.toggle('selected')
+  }
+
   return (
     <div className="container">
       <nav className="sidebar">
         <span className="title">
           CSGO<p>Skills</p>
         </span>
-        <button className="button-map selected">Dust 2</button>
-        <button className="button-map">Inferno</button>
-        <button className="button-map">Mirage</button>
-        <button className="button-map">Train</button>
-        <button className="button-map">Overpass</button>
-        <button className="button-map">Nuke</button>
+        <button onClick={handleImage}>Dust 2</button>
+        <button onClick={handleImage}>Inferno</button>
+        <button onClick={handleImage}>Mirage</button>
+        <button onClick={handleImage}>Train</button>
+        <button onClick={handleImage}>Overpass</button>
+        <button onClick={handleImage}>Nuke</button>
       </nav>
     </div>
   )
