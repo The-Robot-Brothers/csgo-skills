@@ -2,6 +2,11 @@ import { createContext, useContext, useState } from 'react'
 
 import dust2Img from '../assets/dust2.jpg'
 import infernoImg from '../assets/inferno.jpg'
+import mirageImg from '../assets/mirage.jpg'
+import nukeImg from '../assets/nuke.jpg'
+import vertigoImg from '../assets/vertigo.jpg'
+import overpassImg from '../assets/overpass.jpg'
+import trainImg from '../assets/train.jpg'
 
 const MapContext = createContext()
 
@@ -16,19 +21,23 @@ export const maps = [
   },
   {
     name: 'mirage',
-    img: dust2Img
+    img: mirageImg
   },
   {
     name: 'nuke',
-    img: dust2Img
+    img: nukeImg
+  },
+  {
+    name: 'vertigo',
+    img: vertigoImg
   },
   {
     name: 'overpass',
-    img: dust2Img
+    img: overpassImg
   },
   {
     name: 'train',
-    img: dust2Img
+    img: trainImg
   }
 ]
 
