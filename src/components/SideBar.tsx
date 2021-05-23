@@ -1,11 +1,17 @@
 import '../styles/sidebar.scss'
 
-export function SideBar() {
-  function handleImage(event: any) {
-    const buttonChecked = event.target
+import { useMap, maps } from '../context/Map'
 
-    buttonChecked.classList.toggle('selected')
-  }
+export function SideBar() {
+  const { setMap } = useMap()
+
+  // function handleImage(event: any) {
+  //   const buttonChecked = event.target
+  //   // buttonChecked.classList.toggle('selected')
+
+  //   // console.log(buttonChecked.className)
+  //   // console.log(buttonChecked.title)
+  // }
 
   return (
     <div className="container">
@@ -13,12 +19,12 @@ export function SideBar() {
         <span className="title">
           CSGO<p>Skills</p>
         </span>
-        <button onClick={handleImage}>Dust 2</button>
-        <button onClick={handleImage}>Inferno</button>
-        <button onClick={handleImage}>Mirage</button>
-        <button onClick={handleImage}>Train</button>
-        <button onClick={handleImage}>Overpass</button>
-        <button onClick={handleImage}>Nuke</button>
+        <button onClick={() => setMap(maps[0])}>Dust 2</button>
+        <button onClick={() => setMap(maps[1])}>Inferno</button>
+        <button onClick={() => setMap(maps[2])}>Mirage</button>
+        <button onClick={() => setMap(maps[3])}>Train</button>
+        <button onClick={() => setMap(maps[4])}>Overpass</button>
+        <button onClick={() => setMap(maps[5])}>Nuke</button>
       </nav>
     </div>
   )
