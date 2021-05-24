@@ -1,12 +1,12 @@
 import { createContext, useContext, useState } from 'react'
 
-import dust2Img from '../assets/dust2.jpg'
-import infernoImg from '../assets/inferno.jpg'
-import mirageImg from '../assets/mirage.jpg'
-import nukeImg from '../assets/nuke.jpg'
-import vertigoImg from '../assets/vertigo.jpg'
-import overpassImg from '../assets/overpass.jpg'
-import trainImg from '../assets/train.jpg'
+import dust2Img from '../assets/maps/dust2.jpg'
+import infernoImg from '../assets/maps/inferno.jpg'
+import mirageImg from '../assets/maps/mirage.jpg'
+import nukeImg from '../assets/maps/nuke.jpg'
+import vertigoImg from '../assets/maps/vertigo.jpg'
+import overpassImg from '../assets/maps/overpass.jpg'
+import trainImg from '../assets/maps/train.jpg'
 
 const MapContext = createContext()
 

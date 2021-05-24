@@ -1,7 +1,7 @@
 import '../styles/layout.scss'
 
-import { Content } from './Content'
 import { SideBar } from './SideBar'
+import { Content } from './Content'
 
 export function Layout() {
   return (

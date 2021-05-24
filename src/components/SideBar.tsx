@@ -1,9 +1,15 @@
 import '../styles/sidebar.scss'
 
 import { useMap, maps } from '../context/Map'
+import { Button } from './Button'
 
 export function SideBar() {
   const { setMap } = useMap()
+
+  // function HandleMap() {
+  //   const id = 0
+  //   setMap(maps[id])
+  // }
 
   return (
     <div className="container">
@@ -11,13 +17,33 @@ export function SideBar() {
         <span className="title">
           CSGO<p>Skills</p>
         </span>
-        <button onClick={() => setMap(maps[0])}>Dust 2</button>
-        <button onClick={() => setMap(maps[1])}>Inferno</button>
-        <button onClick={() => setMap(maps[2])}>Mirage</button>
-        <button onClick={() => setMap(maps[3])}>Nuke</button>
-        <button onClick={() => setMap(maps[4])}>Vertigo</button>
-        <button onClick={() => setMap(maps[5])}>Overpass</button>
-        <button onClick={() => setMap(maps[6])}>Train</button>
+        <Button title="Dust 2" selected={true} onClick={() => setMap(maps[0])} />
+        <Button
+          title="Inferno"
+          selected={false}
+          onClick={() => setMap(maps[1])}
+        />
+        <Button
+          title="Mirage"
+          selected={false}
+          onClick={() => setMap(maps[2])}
+        />
+        <Button title="Nuke" selected={false} onClick={() => setMap(maps[3])} />
+        <Button
+          title="Vertigo"
+          selected={false}
+          onClick={() => setMap(maps[4])}
+        />
+        <Button
+          title="Overpass"
+          selected={false}
+          onClick={() => setMap(maps[5])}
+        />
+        <Button
+          title="train"
+          selected={false}
+          onClick={() => setMap(maps[6])}
+        />
       </nav>
     </div>
   )
