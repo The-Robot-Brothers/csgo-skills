@@ -31,6 +31,7 @@ export function Content() {
         <button>
           <img src={SelectTeamImg} alt="select team" />
         </button>
+        <hr />
         <button>
           <img src={FlashImg} alt="flash" />
         </button>
