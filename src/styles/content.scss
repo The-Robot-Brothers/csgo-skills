@@ -38,6 +38,12 @@
         width: 275px;
         height: 275px;
 
+        -webkit-user-drag: none;
+        -khtml-user-drag: none;
+        -moz-user-drag: none;
+        -o-user-drag: none;
+        user-select: none;
+
         transition: 0.2s;
         &:hover {
           filter: opacity(0.9);
@@ -79,6 +85,12 @@
         filter: opacity(0.5);
         width: 30px;
         height: 30px;
+
+        -webkit-user-drag: none;
+        -khtml-user-drag: none;
+        -moz-user-drag: none;
+        -o-user-drag: none;
+        user-select: none;
 
         transition: 0.2s;
         &:hover {
