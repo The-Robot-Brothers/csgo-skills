@@ -24,7 +24,7 @@ export function Content() {
     } else {
       document.getElementById('menuteam')!.style.display = 'none'
       document.getElementById('menubombs')!.style.display = 'flex'
-      document.getElementById('menuvideos')!.style.display = 'flex'
+      document.getElementById('menuvideos')!.style.display = 'grid'
     }
   }
 
@@ -62,17 +62,34 @@ export function Content() {
         </button>
       </div>
 
-      <div className="menu-videos" id="menuvideos">
+      <div className="grid-container" id="menuvideos">
         <iframe
+          className="grid-item"
           src="https://www.youtube.com/embed/A90hh7JcJyg"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
         ></iframe>
-
         <iframe
-          src="https://www.youtube.com/embed/A90hh7JcJyg"
+          className="grid-item"
+          src="https://www.youtube.com/embed/x0Xo58tjarw"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+        <iframe
+          className="grid-item"
+          src="https://www.youtube.com/embed/Xhg16t1okAo"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+        <iframe
+          className="grid-item"
+          src="https://www.youtube.com/embed/duyTBVkHATA"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
         ></iframe>
       </div>
     </div>

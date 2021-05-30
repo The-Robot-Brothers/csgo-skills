@@ -100,11 +100,11 @@
     }
   }
 
-  .menu-videos {
+  .grid-container {
     display: none;
-    align-items: center;
-    justify-content: center;
-    flex-direction: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
 
     position: absolute;
 
@@ -113,7 +113,6 @@
     iframe {
       width: 450px;
       height: 250px;
-      margin: 10px;
     }
   }
 }
