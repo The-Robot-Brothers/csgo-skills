@@ -53,7 +53,7 @@
   }
 
   .menu-bombs {
-    display: flex;
+    display: none;
     align-items: center;
     flex-direction: column;
 
@@ -97,6 +97,23 @@
           filter: opacity(0.9);
         }
       }
+    }
+  }
+
+  .menu-videos {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: grid;
+
+    position: absolute;
+
+    margin: 80px;
+
+    iframe {
+      width: 450px;
+      height: 250px;
+      margin: 10px;
     }
   }
 }

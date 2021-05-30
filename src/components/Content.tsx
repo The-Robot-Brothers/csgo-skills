@@ -14,36 +14,66 @@ import SmokeImg from '../assets/bombs/smoke.svg'
 export function Content() {
   const { map } = useMap()
 
+  function HandleTeamToBombs() {
+    var display = document.getElementById('menuteam')!.style.display
+
+    if (display === 'none') {
+      document.getElementById('menuteam')!.style.display = 'flex'
+      document.getElementById('menubombs')!.style.display = 'none'
+      document.getElementById('menuvideos')!.style.display = 'none'
+    } else {
+      document.getElementById('menuteam')!.style.display = 'none'
+      document.getElementById('menubombs')!.style.display = 'flex'
+      document.getElementById('menuvideos')!.style.display = 'flex'
+    }
+  }
+
+  function HandleBombsToVideos() {}
+
   return (
     <div className="container">
       <img src={map.img} alt={map.name} />
 
-      <div className="menu-team">
-        <button>
-          <img src={TrImg} alt="Terrorist" onClick={() => {}} />
+      <div className="menu-team" id="menuteam">
+        <button onClick={HandleTeamToBombs}>
+          <img src={TrImg} alt="terrorist" />
         </button>
-        <button>
-          <img src={CtImg} alt="Counter Terrorist" />
+        <button onClick={HandleTeamToBombs}>
+          <img src={CtImg} alt="counter terrorist" />
         </button>
       </div>
 
-      <div className="menu-bombs">
-        <button>
-          <img src={SelectTeamImg} alt="select team" />
+      <div className="menu-bombs" id="menubombs">
+        <button onClick={HandleTeamToBombs}>
+          <img src={SelectTeamImg} alt="select team" onClick={() => {}} />
         </button>
         <hr />
-        <button>
+        <button onClick={HandleBombsToVideos}>
           <img src={FlashImg} alt="flash" />
         </button>
-        <button>
+        <button onClick={HandleBombsToVideos}>
           <img src={GrenadeImg} alt="grenade" />
         </button>
-        <button>
+        <button onClick={HandleBombsToVideos}>
           <img src={MolotovImg} alt="molotov" />
         </button>
-        <button>
+        <button onClick={HandleBombsToVideos}>
           <img src={SmokeImg} alt="smoke" />
         </button>
+      </div>
+
+      <div className="menu-videos" id="menuvideos">
+        <iframe
+          src="https://www.youtube.com/embed/A90hh7JcJyg"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        ></iframe>
+
+        <iframe
+          src="https://www.youtube.com/embed/A90hh7JcJyg"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        ></iframe>
       </div>
     </div>
   )
