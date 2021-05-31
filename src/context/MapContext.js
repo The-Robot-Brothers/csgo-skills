@@ -13,7 +13,25 @@ const MapContext = createContext()
 export const maps = [
   {
     name: 'dust2',
-    img: dust2Img
+    img: dust2Img,
+    video: [
+      {
+        type: 'flash',
+        src: 'https://www.youtube.com/embed/x0Xo58tjarw'
+      },
+      {
+        type: 'smoke',
+        src: 'https://www.youtube.com/embed/A90hh7JcJyg'
+      },
+      {
+        type: 'grenade',
+        src: 'https://www.youtube.com/embed/duyTBVkHATA'
+      },
+      {
+        type: 'molotov',
+        src: 'https://www.youtube.com/embed/Xhg16t1okAo'
+      }
+    ]
   },
   {
     name: 'inferno',

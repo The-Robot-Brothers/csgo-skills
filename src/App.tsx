@@ -1,4 +1,4 @@
-import MapProvider from './context/Map'
+import MapProvider from './context/MapContext'
 
 import { Layout } from './components/Layout'
 import './styles/global.scss'

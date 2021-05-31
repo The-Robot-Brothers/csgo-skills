@@ -1,4 +1,4 @@
-import { useMap } from '../context/Map'
+import { useMap } from '../context/MapContext'
 
 import '../styles/content.scss'
 
@@ -65,28 +65,28 @@ export function Content() {
       <div className="grid-container" id="menuvideos">
         <iframe
           className="grid-item"
-          src="https://www.youtube.com/embed/A90hh7JcJyg"
+          src={map.video[0].src}
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
         ></iframe>
         <iframe
           className="grid-item"
-          src="https://www.youtube.com/embed/x0Xo58tjarw"
+          src={map.video[1].src}
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
         ></iframe>
         <iframe
           className="grid-item"
-          src="https://www.youtube.com/embed/Xhg16t1okAo"
+          src={map.video[2].src}
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
         ></iframe>
         <iframe
           className="grid-item"
-          src="https://www.youtube.com/embed/duyTBVkHATA"
+          src={map.video[3].src}
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen

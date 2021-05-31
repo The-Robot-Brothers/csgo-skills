@@ -1,6 +1,6 @@
 import '../styles/sidebar.scss'
 
-import { useMap, maps } from '../context/Map'
+import { useMap, maps } from '../context/MapContext'
 import { Button } from './Button'
 
 export function SideBar() {
@@ -17,7 +17,11 @@ export function SideBar() {
         <span className="title">
           CSGO<p>Skills</p>
         </span>
-        <Button title="Dust 2" selected={true} onClick={() => setMap(maps[0])} />
+        <Button
+          title="Dust 2"
+          selected={true}
+          onClick={() => setMap(maps[0])}
+        />
         <Button
           title="Inferno"
           selected={false}
