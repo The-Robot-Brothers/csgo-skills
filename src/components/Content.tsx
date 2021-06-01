@@ -14,6 +14,13 @@ import SmokeImg from '../assets/bombs/smoke.svg'
 export function Content() {
   const { map } = useMap()
 
+  console.log(map)
+
+  // console.log(map.video[0].src)
+  // console.log(map.video[1].src)
+  // console.log(map.video[2].src)
+  // console.log(map.video[3].src)
+
   function HandleTeamToBombs() {
     var display = document.getElementById('menuteam')!.style.display
 

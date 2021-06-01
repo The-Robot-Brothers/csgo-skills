@@ -35,27 +35,135 @@ export const maps = [
   },
   {
     name: 'inferno',
-    img: infernoImg
+    img: infernoImg,
+    video: [
+      {
+        type: 'flash',
+        src: 'https://www.youtube.com/embed/x0Xo58tjarw'
+      },
+      {
+        type: 'smoke',
+        src: 'https://www.youtube.com/embed/A90hh7JcJyg'
+      },
+      {
+        type: 'grenade',
+        src: 'https://www.youtube.com/embed/duyTBVkHATA'
+      },
+      {
+        type: 'molotov',
+        src: 'https://www.youtube.com/embed/Xhg16t1okAo'
+      }
+    ]
   },
   {
     name: 'mirage',
-    img: mirageImg
+    img: mirageImg,
+    video: [
+      {
+        type: 'flash',
+        src: 'https://www.youtube.com/embed/x0Xo58tjarw'
+      },
+      {
+        type: 'smoke',
+        src: 'https://www.youtube.com/embed/A90hh7JcJyg'
+      },
+      {
+        type: 'grenade',
+        src: 'https://www.youtube.com/embed/duyTBVkHATA'
+      },
+      {
+        type: 'molotov',
+        src: 'https://www.youtube.com/embed/Xhg16t1okAo'
+      }
+    ]
   },
   {
     name: 'nuke',
-    img: nukeImg
+    img: nukeImg,
+    video: [
+      {
+        type: 'flash',
+        src: 'https://www.youtube.com/embed/x0Xo58tjarw'
+      },
+      {
+        type: 'smoke',
+        src: 'https://www.youtube.com/embed/A90hh7JcJyg'
+      },
+      {
+        type: 'grenade',
+        src: 'https://www.youtube.com/embed/duyTBVkHATA'
+      },
+      {
+        type: 'molotov',
+        src: 'https://www.youtube.com/embed/Xhg16t1okAo'
+      }
+    ]
   },
   {
     name: 'vertigo',
-    img: vertigoImg
+    img: vertigoImg,
+    video: [
+      {
+        type: 'flash',
+        src: 'https://www.youtube.com/embed/x0Xo58tjarw'
+      },
+      {
+        type: 'smoke',
+        src: 'https://www.youtube.com/embed/A90hh7JcJyg'
+      },
+      {
+        type: 'grenade',
+        src: 'https://www.youtube.com/embed/duyTBVkHATA'
+      },
+      {
+        type: 'molotov',
+        src: 'https://www.youtube.com/embed/Xhg16t1okAo'
+      }
+    ]
   },
   {
     name: 'overpass',
-    img: overpassImg
+    img: overpassImg,
+    video: [
+      {
+        type: 'flash',
+        src: 'https://www.youtube.com/embed/x0Xo58tjarw'
+      },
+      {
+        type: 'smoke',
+        src: 'https://www.youtube.com/embed/A90hh7JcJyg'
+      },
+      {
+        type: 'grenade',
+        src: 'https://www.youtube.com/embed/duyTBVkHATA'
+      },
+      {
+        type: 'molotov',
+        src: 'https://www.youtube.com/embed/Xhg16t1okAo'
+      }
+    ]
   },
   {
     name: 'train',
-    img: trainImg
+    img: trainImg,
+    video: [
+      {
+        type: 'flash',
+        src: 'https://www.youtube.com/embed/x0Xo58tjarw'
+      },
+      {
+        type: 'smoke',
+        src: 'https://www.youtube.com/embed/A90hh7JcJyg'
+      },
+      {
+        type: 'grenade',
+        src: 'https://www.youtube.com/embed/duyTBVkHATA'
+      },
+      {
+        type: 'molotov',
+        src: 'https://www.youtube.com/embed/Xhg16t1okAo'
+      }
+    ]
   }
 ]
 
