@@ -6,11 +6,6 @@ import { Button } from './Button'
 export function SideBar() {
   const { setMap } = useMap()
 
-  // function HandleMap() {
-  //   const id = 0
-  //   setMap(maps[id])
-  // }
-
   return (
     <div className="container">
       <nav className="sidebar">
@@ -19,7 +14,7 @@ export function SideBar() {
         </span>
         <Button
           title="Dust 2"
-          selected={true}
+          selected={false}
           onClick={() => setMap(maps[0])}
         />
         <Button
